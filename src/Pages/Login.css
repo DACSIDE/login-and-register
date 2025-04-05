@@ -1,0 +1,32 @@
+/* Style Link elements like buttons */
+.submit-container a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  padding: 10px;
+  background: #4CAF50;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  text-decoration: none; 
+}
+
+.submit-container a:hover {
+  background: #45a049;
+}
+
+
+@media (max-width: 400px) {
+  .submit-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submit-container a {
+    width: 100%;
+  }
+}

@@ -18,7 +18,7 @@ import {
   FiMicOff,
   FiX,
 } from "react-icons/fi";
-import "./VideoCall.css"; // Create this CSS file
+import "./VideoCall.css"; 
 
 export const VideoCall = () => {
   const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
