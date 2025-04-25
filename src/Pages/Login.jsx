@@ -14,14 +14,14 @@ const Login = ({ setIsLogin }) => {
   const submitHandler = async (e) => {
     e.preventDefault();
   
-    const userData = { email: email, user_password: password };
+    const userData = { email: "john@example.com", password: "secretpassword" };
   
     try {
       // Making a POST request to the API for login
       const response = await axios.post("http://127.0.0.1:8000/api/login", userData);
   
       // Assuming the response contains a token or some login information
-      console.log(response.data);
+      console.log(response);
   
       // If login is successful, set the login state and redirect
       setIsLogin(true);
